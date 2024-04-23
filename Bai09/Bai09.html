@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let point = Number(prompt('Mời Bạn cho điểm từ 0 đến 100:'));
+
+        if (point <= 100 && point >= 75) {
+            alert('Loại A');
+        }
+        else if (point < 75 && point >= 60) {
+            alert('Loại B')
+        }
+        else if (point < 60 && point >= 45) {
+            alert('Loại C')
+        }
+        else if (point < 45 && point >= 35) {
+            alert('Loại D')
+        }
+        else {
+            alert('Loại E')
+        }
+    </script>
+</body>
+
+</html>

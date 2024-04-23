@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Bài 1: Viết chương trình nhập điểm của một sinh viên cho các môn: Vật lý, Hóa học, và Sinh học. Sau đó hiển thị điểm trung bình và tổng của những điểm này.
+        let Physics = parseInt(prompt('Mời bạn nhập điểm Vật lý:'));
+        let Chemistry = parseInt(prompt('Mời bạn nhập điểm Hóa học:'));
+        let Biology = parseInt(prompt('Mời bạn nhập điểm Sinh học:'));
+
+        let average = (Physics + Chemistry + Biology) / 3;
+        let total = Physics + Chemistry + Biology;
+
+        alert('Điểm trung bình:' + average);
+        alert('Tổng điểm:' + total);
+        //Viết chương trình nhập một giá trị là độ 0C (Celsius) và chuyển nó sang độ 0F (Fahrenheit). [Hướng dẫn: C/5 = (F-32)/9].
+        let Celsius = parseInt(prompt('Mời bạn nhập độ 0C:'));
+        let Fahrenheit = (Celsius / 5) * (9 / 5) + 32;
+        alert('Độ 0F:' + Fahrenheit);
+        //Viết chương trình tính diện tích hình tròn.
+        let radius = parseInt(prompt('Mời bạn nhập bán kính hình tròn:'));
+        let DT = parseInt(Math.PI) * radius * radius;
+        alert('Diện tích hình tròn:' + DT);
+        //Viết chương trình chu vi hình tròn.
+        let R = parseInt(prompt('Mời bạn nhập bán kính hình tròn:'));
+        let CV = 2 * parseInt(Math.PI) * R;
+        alert('Diện tích hình tròn:' + CV);
+    </script>
+</body>
+
+</html>

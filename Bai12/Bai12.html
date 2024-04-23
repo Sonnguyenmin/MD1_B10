@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Khai báo biến :
+        let firstName = "Academy";
+        let lastName = "Rekkei";
+        let fullName = lastName + " " + firstName;
+
+        alert(fullName);
+
+        //Liệt kê các kiểu dữ liệu, mỗi cái cho 1 ví dụ cụ thể về kiểu dữ liệu đó.
+        //Kiểu dữ liệu Number
+        let age = 20;
+        //Kiểu dữ liệu Boolean
+        let isMale = true;
+        //Kiểu dữ liệu String
+        let name = "Nguyễn Trường Sơn"
+        //Kiểu dữ liệu Object
+        let person = {
+            firstName: "Academy",
+            lastName: "Rekkei",
+            age: 20,
+            isMale: true,
+            name: "Sơn"
+        }
+        //Kiểu dữ liệu Array
+        let numbers = [1, 2, 3, 4, 5];
+        //Kiểu dữ liệu Function
+        function showMessage() {
+            alert("Xin chào!");
+        }
+        //Kiểu dữ liệu Undefined
+        let x;
+        //Kiểu dữ liệu Null
+        let y = null;
+
+        //Kiểu dữ liệu Symbol
+        let sym = Symbol("Academy");
+
+        // /Viết chương trình nhập điểm của một sinh viên cho các môn: Vật lý, Hóa học, và Sinh học. Sau đó hiển thị tổng điểm và điểm trung bình 3 môn này.
+
+        let Physics = parseInt(prompt('Mời bạn nhập điểm Vật lý:'));
+        let Chemistry = parseInt(prompt('Mời bạn nhập điểm Hóa học:'));
+        let Biology = parseInt(prompt('Mời bạn nhập điểm Sinh học:'));
+
+        let average = (Physics + Chemistry + Biology) / 3;
+        let total = Physics + Chemistry + Biology;
+
+        alert('Tổng điểm:' + total);
+        alert('Điểm trung bình:' + average);
+
+        //Viết chương trình nhập một giá trị là độ 0C (Celsius) và chuyển nó sang độ 0F (Fahrenheit). [Hướng dẫn: C/5 = (F-32)/9].
+        let celsius = parseInt(prompt('Mời bạn nhập độ C:'));
+        let fahrenheit = (celsius / 5) * (9 / 5) + 32;
+        alert('Độ F:' + fahrenheit);
+
+        // /Viết chương trình tính chu vi và diện tích hình chữ nhật.
+        let width = parseInt(prompt('Mời bạn nhập chiều rộng:'));
+        let height = parseInt(prompt('Mời bạn nhập chiều cao:'));
+        let area = width * height;
+        let perimeter = (width + height) * 2;
+        alert('Diện tích:' + area);
+        alert('Chu vi:' + perimeter);
+
+        //Viết chương trình tính chu vi và diện tích hình tròn.
+        let radius = parseInt(prompt('Mời bạn nhập bán kính:'));
+        let DT = Math.PI * radius * radius;
+        let CV = 2 * Math.PI * radius;
+        alert('Diện tích:' + DT);
+        alert('Chu vi:' + CV);
+
+        //Phân biệt “==” và “===”
+        let g = 10;
+        let h = "10";
+        alert(g == h);
+        alert(g === h);
+    </script>
+</body>
+
+</html>
